@@ -78,6 +78,7 @@ $('#grid').addEventListener('click', (e) => {
 });
 
 /* ---------------- 상세 + 추천 ---------------- */
+const CAT_ICON = { '상의': 'closet', '하의': 'pants', '원피스·우주복': 'romper', '아우터': 'jacket' };
 function openDetail(id) {
   const it = items.find((i) => i.id === id); if (!it) return;
   const { byCat, outfit } = recommend(it, items);
@@ -88,7 +89,7 @@ function openDetail(id) {
     <div class="card best">
       <div class="outfit">
         <img src="${it.photo}" alt="">
-        ${outfit.map((o) => `<span class="plus">+</span><img src="${o.item.photo}" alt="${esc(o.item.name)}">`).join('')}
+        ${outfit.map((o) => `<span class="plus">${icon('join', 24)}</span><img src="${o.item.photo}" alt="${esc(o.item.name)}">`).join('')}
       </div>
       ${outfit.map((o) => `<p class="reason"><b>${esc(o.item.name)}</b> — ${esc(o.reason)}</p>`).join('')}
     </div>` : '';
@@ -96,17 +97,18 @@ function openDetail(id) {
   const cats = CATEGORIES.filter((c) => byCat[c]);
   const listHtml = cats.length
     ? cats.map((cat) => `
-      <h3>어울리는 ${esc(cat)}</h3>
+      <h3 class="with-ico">${icon(CAT_ICON[cat], 26)}어울리는 ${esc(cat)}</h3>
       <div class="rec-list">
         ${byCat[cat].slice(0, 5).map((r) => `
           <button class="rec" data-id="${r.item.id}">
             <img src="${r.item.photo}" alt="">
             <div class="info"><b>${esc(r.item.name)}</b><p>${esc(r.reason)}</p></div>
-            <span class="score">${pct(r.score)}</span>
+            <span class="score">${icon('heart', 16)}${pct(r.score)}</span>
           </button>`).join('')}
       </div>`).join('')
-    : `<p class="muted" style="margin-top:20px">함께 입을 만한 다른 종류의 옷이 아직 없어요. ${
-        it.category === '하의' ? '상의' : '하의'}나 아우터를 더 등록해 보세요!</p>`;
+    : `<div class="empty sheet-empty"><p class="big">${icon('basket', 56)}</p>
+        <p>함께 입을 만한 다른 종류의 옷이 아직 없어요.</p>
+        <p>${it.category === '하의' ? '상의' : '하의'}나 아우터를 더 등록해 보세요!</p></div>`;
 
   $('#sheet-content').innerHTML = `
     <div class="detail">
@@ -117,8 +119,8 @@ function openDetail(id) {
     ${bestHtml}
     ${listHtml}
     <div class="actions">
-      <button class="row-btn" id="edit-item">수정</button>
-      <button class="danger" id="delete-item">삭제</button>
+      <button class="row-btn with-ico" id="edit-item">${icon('edit', 20)}수정</button>
+      <button class="danger with-ico" id="delete-item">${icon('trash', 20)}삭제</button>
     </div>`;
   $('#sheet').classList.remove('hidden');
   $('#sheet-content').querySelectorAll('.rec').forEach((b) => b.addEventListener('click', () => openDetail(b.dataset.id)));
