@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>basket</title>
   <g transform="translate(-536 -40)">
-    <path d="M553 59C553 51 556 47 562 47C568 47 571 51 571 59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFB760"/>
-    <path d="M545 59H579L575 79C574.667 80.3333 573.833 81 572.5 81H551.5C550.167 81 549.333 80.3333 549 79L545 59Z" fill="#FFFDEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFB760"/>
-    <path d="M557 66V74M567 66V74" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#E771C0"/>
-    <path d="M562 66V74" stroke-width="3" stroke-linecap="round" stroke="#E771C0"/>
+    <path d="M553 59C553 51 556 47 562 47C568 47 571 51 571 59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M545 59H579L575 79C574.667 80.3333 573.833 81 572.5 81H551.5C550.167 81 549.333 80.3333 549 79L545 59Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M557 66V74M567 66V74" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F78BC2"/>
+    <path d="M562 66V74" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
   </g>
 </svg>

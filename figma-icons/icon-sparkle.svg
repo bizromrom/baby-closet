@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>sparkle</title>
   <g transform="translate(-536 -280)">
-    <path d="M558 288C559.333 297.333 564.667 303 574 305C564.667 307 559.333 312.667 558 322C556.667 312.667 551.333 307 542 305C551.333 303 556.667 297.333 558 288Z" fill="#FFFDEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFB760"/>
-    <path d="M575 286V293M571.5 289.5H578.5" stroke-width="3" stroke-linecap="round" stroke="#E771C0"/>
+    <path d="M558 288C559.333 297.333 564.667 303 574 305C564.667 307 559.333 312.667 558 322C556.667 312.667 551.333 307 542 305C551.333 303 556.667 297.333 558 288Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M575 286V293M571.5 289.5H578.5" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
   </g>
 </svg>

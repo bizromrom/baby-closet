@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>heart</title>
   <g transform="translate(-416 -280)">
-    <path d="M442 320C431.333 313.333 425.667 306.333 425 299C425 293.667 427.667 290.667 433 290C437 290 440 292 442 296C444 292 447 290 451 290C456.333 290.667 459 293.667 459 299C458.333 306.333 452.667 313.333 442 320Z" fill="#FFFDEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFB760"/>
-    <path d="M431 298C431.333 296 432.333 294.833 434 294.5" stroke-width="3" stroke-linecap="round" stroke="#E771C0"/>
+    <path d="M442 320C431.333 313.333 425.667 306.333 425 299C425 293.667 427.667 290.667 433 290C437 290 440 292 442 296C444 292 447 290 451 290C456.333 290.667 459 293.667 459 299C458.333 306.333 452.667 313.333 442 320Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M431 298C431.333 296 432.333 294.833 434 294.5" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
   </g>
 </svg>
