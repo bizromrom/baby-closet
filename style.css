@@ -1,20 +1,23 @@
-/* 메인 컬러: Pink Lace #FFC3E0 + Forest Green #0F5730
-   글꼴: Pretendard / 글자 크기는 모두 정수 px
-   스타일: 흰 바탕 · 큰 굵은 제목 · 알약 모양 칩/버튼 · 크게 둥근 카드 */
+/* 메인 컬러: Pink Lace #FFC3E0 + Forest Green #0F5730 — 포인트로만 사용
+   - 그린: 주요 버튼, 선택 상태, 추천 코디 카드
+   - 핑크: 아이콘 하이라이트, 점수 같은 작은 강조
+   - 나머지는 흰색 · 회색 바탕
+   글꼴: Pretendard / 글자 크기는 모두 정수 px */
 :root {
   --pink: #FFC3E0;
-  --pink-soft: #FFE8F3;
+  --pink-ink: #C2457F;
   --green: #0F5730;
   --green-dark: #0A3F22;
   --bg: #FFFFFF;
   --surface: #F4F5F4;
+  --surface-2: #F9FAF9;
   --card: #FFFFFF;
   --ink: #161A17;
   --muted: #7C847E;
   --line: #ECEEEC;
   --danger: #B3261E;
   --radius: 24px;
-  --shadow: 0 4px 16px rgba(22,26,23,.06);
+  --shadow: 0 4px 16px rgba(22,26,23,.05);
 }
 * { box-sizing: border-box; }
 html { font-size: 16px; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
@@ -30,16 +33,19 @@ body {
 button, input { font-family: inherit; font-size: 16px; letter-spacing: inherit; }
 button { cursor: pointer; }
 .hidden { display: none !important; }
+.ico { display: block; flex: none; }
 
 /* 상단: 큰 제목 */
 .topbar {
   position: sticky; top: 0; z-index: 5;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 20px 20px 12px; background: rgba(255,255,255,.94); backdrop-filter: blur(8px);
+  padding: 18px 20px 12px; background: rgba(255,255,255,.94); backdrop-filter: blur(8px);
 }
-.topbar h1 { font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.6px; }
-.badge { font-size: 12px; font-weight: 700; padding: 8px 12px; border-radius: 99px; background: var(--surface); color: var(--muted); }
-.badge.on { background: var(--green); color: var(--pink); }
+.topbar h1 { display: flex; align-items: center; gap: 8px; font-size: 26px; font-weight: 800; margin: 0; letter-spacing: -0.6px; }
+.badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; padding: 8px 12px; border-radius: 99px; background: var(--surface); color: var(--muted); }
+.badge::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #C5CAC6; }
+.badge.on { color: var(--ink); }
+.badge.on::before { background: var(--green); }
 
 main { padding: 4px 20px 0; }
 .view { display: none; }
@@ -52,7 +58,7 @@ main { padding: 4px 20px 0; }
   border: 0; background: var(--surface); color: var(--ink);
   font-size: 14px; font-weight: 600; padding: 10px 16px; border-radius: 99px; white-space: nowrap;
 }
-.filters button.on, .chips button.on { background: var(--pink); color: var(--green); font-weight: 700; }
+.filters button.on, .chips button.on { background: var(--ink); color: #fff; font-weight: 700; }
 
 /* 옷장 그리드 */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
@@ -60,27 +66,27 @@ main { padding: 4px 20px 0; }
   background: var(--card); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); padding: 0;
   text-align: left; box-shadow: var(--shadow);
 }
-.tile img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: var(--pink-soft); }
+.tile img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: var(--surface); }
 .tile .meta { padding: 10px 14px 14px; }
 .tile .name { font-weight: 700; font-size: 15px; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tile .sub { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 4px; margin-top: 2px; }
 .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; border: 1px solid rgba(0,0,0,.12); flex: none; }
 
-.empty {
-  text-align: center; color: var(--green); font-size: 15px; padding: 40px 20px;
-  background: var(--pink-soft); border-radius: var(--radius);
-}
-.empty .big { font-size: 56px; margin: 0 0 8px; }
+.empty { text-align: center; color: var(--muted); font-size: 15px; padding: 40px 20px; background: var(--surface-2); border-radius: var(--radius); }
+.empty .big { display: flex; justify-content: center; margin: 0 0 12px; }
 .empty p { margin: 4px 0; }
+.empty b { color: var(--ink); }
 
 /* 사진 올리기 */
 .photo-pick {
   display: flex; align-items: center; justify-content: center; text-align: center;
-  aspect-ratio: 1; border: 0; border-radius: var(--radius);
-  background: var(--pink-soft); color: var(--green); font-size: 18px; font-weight: 700; overflow: hidden; cursor: pointer;
+  aspect-ratio: 1; border: 2px dashed #DADDDA; border-radius: var(--radius);
+  background: var(--surface-2); color: var(--ink); font-size: 16px; font-weight: 700; overflow: hidden; cursor: pointer;
 }
+#pick-hint { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+#pick-hint br { display: none; }
 .photo-pick input[type=file] { display: none; }
-.photo-pick img { width: 100%; height: 100%; object-fit: contain; background: var(--pink-soft); }
+.photo-pick img { width: 100%; height: 100%; object-fit: contain; background: var(--surface); }
 .status { min-height: 24px; color: var(--muted); font-size: 14px; font-weight: 500; text-align: center; margin: 14px 0; }
 .status.busy::before { content: "⏳ "; }
 
@@ -92,7 +98,7 @@ label input {
   display: block; width: 100%; margin-top: 8px; padding: 14px 18px; font-size: 16px; font-weight: 500;
   border: 0; border-radius: 99px; color: var(--ink); background: var(--surface);
 }
-label input:focus { outline: 2px solid var(--green); outline-offset: 0; }
+label input:focus { outline: 2px solid var(--ink); outline-offset: 0; }
 label.switch { display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: 15px; }
 label.switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--green); }
 .field { font-size: 14px; font-weight: 700; color: var(--muted); margin-bottom: 18px; }
@@ -100,7 +106,7 @@ label.switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--g
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
 .chips.colors button { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px 8px 10px; }
 
-/* 버튼 (알약 모양) */
+/* 버튼 (알약 모양) — 그린은 주요 버튼에만 */
 .row { display: flex; gap: 8px; }
 .primary, .row button, .danger, .row-btn {
   border: 0; border-radius: 99px; padding: 15px 22px; font-size: 15px; font-weight: 700;
@@ -112,22 +118,23 @@ label.switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--g
 .row-btn:disabled { opacity: .7; }
 .danger { background: #FDECEC; color: var(--danger); }
 .muted { color: var(--muted); font-size: 14px; line-height: 1.6; }
-.muted b { color: var(--green); }
+.muted b { color: var(--ink); }
 .small { font-size: 12px; }
 
-/* 하단 탭: 선택된 탭에 부드러운 배경 */
+/* 하단 탭: 선택 안 된 탭은 회색 아이콘 */
 .tabbar {
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
   display: flex; justify-content: space-around; background: rgba(255,255,255,.96); backdrop-filter: blur(8px);
   border-top: 1px solid var(--line); padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
 }
 .tabbar button {
-  border: 0; background: none; display: flex; flex-direction: column; align-items: center;
-  font-size: 20px; color: var(--muted); padding: 8px 22px; border-radius: 18px; min-width: 76px;
+  border: 0; background: none; display: flex; flex-direction: column; align-items: center; gap: 2px;
+  color: var(--muted); padding: 8px 22px; border-radius: 18px; min-width: 76px;
 }
-.tabbar button span { font-size: 11px; font-weight: 700; margin-top: 2px; }
-.tabbar button.active { color: var(--green); background: var(--pink-soft); }
-.tabbar .add { font-size: 22px; font-weight: 800; }
+.tabbar button span { font-size: 11px; font-weight: 700; }
+.tabbar button .ico { filter: grayscale(1); opacity: .45; transition: opacity .15s; }
+.tabbar button.active { color: var(--ink); background: var(--surface); }
+.tabbar button.active .ico { filter: none; opacity: 1; }
 
 /* 상세 · 추천 시트 */
 .sheet { position: fixed; inset: 0; z-index: 20; background: rgba(22,26,23,.4); display: flex; align-items: flex-end; justify-content: center; }
@@ -141,28 +148,29 @@ label.switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--g
 }
 .close { position: absolute; top: 18px; right: 18px; border: 0; background: var(--surface); color: var(--ink); width: 36px; height: 36px; border-radius: 50%; font-size: 16px; }
 .detail { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 8px; }
-.detail img { width: 120px; height: 120px; object-fit: cover; border-radius: 20px; flex: none; background: var(--pink-soft); }
+.detail img { width: 120px; height: 120px; object-fit: cover; border-radius: 20px; flex: none; background: var(--surface); }
 .detail h2 { margin: 2px 0 8px; font-size: 22px; font-weight: 800; letter-spacing: -0.5px; padding-right: 40px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tag { font-size: 12px; font-weight: 600; background: var(--surface); border-radius: 99px; padding: 5px 10px; display: inline-flex; align-items: center; gap: 4px; }
 h3 { font-size: 20px; font-weight: 800; letter-spacing: -0.4px; margin: 26px 0 12px; }
+h3.with-ico { display: flex; align-items: center; gap: 6px; }
 .best { background: var(--green); color: #fff; border: 0; }
-.best .reason { color: rgba(255,255,255,.9); }
+.best .reason { color: rgba(255,255,255,.85); }
 .best .reason b { color: var(--pink); }
 .outfit { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .outfit img { width: 76px; height: 76px; object-fit: cover; border-radius: 18px; background: #fff; }
-.outfit .plus { color: var(--pink); font-size: 20px; font-weight: 800; }
+.outfit .plus { color: rgba(255,255,255,.7); font-size: 20px; font-weight: 800; }
 .reason { font-size: 13px; color: var(--ink); margin: 10px 0 0; line-height: 1.5; }
 .rec-list { display: flex; flex-direction: column; gap: 10px; }
 .rec {
   display: flex; gap: 12px; align-items: center; background: var(--card); border: 1px solid var(--line);
   border-radius: 20px; padding: 10px 14px 10px 10px; text-align: left; width: 100%; box-shadow: var(--shadow);
 }
-.rec img { width: 60px; height: 60px; border-radius: 14px; object-fit: cover; flex: none; background: var(--pink-soft); }
+.rec img { width: 60px; height: 60px; border-radius: 14px; object-fit: cover; flex: none; background: var(--surface); }
 .rec .info { flex: 1; min-width: 0; }
 .rec .info b { font-size: 15px; color: var(--ink); }
 .rec .info p { margin: 2px 0 0; font-size: 12px; color: var(--muted); }
-.score { font-size: 13px; font-weight: 800; color: var(--green); background: var(--pink); padding: 6px 10px; border-radius: 99px; white-space: nowrap; }
+.score { font-size: 13px; font-weight: 800; color: var(--pink-ink); white-space: nowrap; }
 .actions { display: flex; gap: 8px; margin-top: 26px; }
 .actions button { flex: 1; }
 

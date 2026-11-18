@@ -1,4 +1,6 @@
 import { CATEGORIES, PATTERNS, SEASONS, COLORS, colorOf, recommend } from './match.js';
+import { icon, mountIcons } from './icons.js';
+mountIcons();
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -82,7 +84,7 @@ function openDetail(id) {
   const pct = (s) => `${Math.round(s * 100)}점`;
 
   const bestHtml = outfit.length ? `
-    <h3>✨ 오늘의 추천 코디</h3>
+    <h3 class="with-ico">${icon('sparkle', 26)}오늘의 추천 코디</h3>
     <div class="card best">
       <div class="outfit">
         <img src="${it.photo}" alt="">
@@ -343,7 +345,7 @@ $('#item-form').addEventListener('submit', async (e) => {
   filter = '전체';
   renderCloset();
   showView('closet');
-  toast('옷장에 저장했어요 👕');
+  toast('옷장에 저장했어요');
   openDetail(item.id);
 });
 

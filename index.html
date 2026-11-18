@@ -13,7 +13,7 @@
 </head>
 <body>
   <header class="topbar">
-    <h1>👶 아기 옷장</h1>
+    <h1><i data-icon="baby" data-size="34"></i>아기 옷장</h1>
     <span id="ai-badge" class="badge">AI 꺼짐</span>
   </header>
 
@@ -22,7 +22,7 @@
     <section id="view-closet" class="view active">
       <div class="filters" id="filters"></div>
       <div id="empty" class="empty hidden">
-        <p class="big">🧺</p>
+        <p class="big"><i data-icon="basket" data-size="64"></i></p>
         <p>아직 등록된 옷이 없어요.</p>
         <p>아래 <b>＋ 옷 추가</b>를 눌러 첫 옷을 찍어 보세요!</p>
       </div>
@@ -34,7 +34,7 @@
       <label class="photo-pick" id="photo-pick">
         <input type="file" accept="image/*" id="file-input" hidden>
         <img id="preview" class="hidden" alt="미리보기">
-        <span id="pick-hint">📷<br>사진 찍기 / 고르기</span>
+        <span id="pick-hint"><i data-icon="camera" data-size="56"></i><br>사진 찍기 / 고르기</span>
       </label>
       <p id="analyze-status" class="status"></p>
 
@@ -78,9 +78,9 @@
   </div>
 
   <nav class="tabbar">
-    <button data-view="closet" class="active">👕<span>옷장</span></button>
-    <button data-view="add" class="add">＋<span>옷 추가</span></button>
-    <button data-view="settings">⚙️<span>설정</span></button>
+    <button data-view="closet" class="active"><i data-icon="closet" data-size="26"></i><span>옷장</span></button>
+    <button data-view="add" class="add"><i data-icon="add" data-size="26"></i><span>옷 추가</span></button>
+    <button data-view="settings"><i data-icon="settings" data-size="26"></i><span>설정</span></button>
   </nav>
 
   <div id="toast" class="toast hidden"></div>
