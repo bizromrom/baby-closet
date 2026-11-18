@@ -1,13 +1,13 @@
-/* 메인 컬러: Pink Lace #FFC3E0 + Forest Green #0F5730 — 포인트로만 사용
-   - 그린: 주요 버튼, 선택 상태, 추천 코디 카드
-   - 핑크: 아이콘 하이라이트, 점수 같은 작은 강조
+/* 메인 컬러: Candy Blush #E771C0 + Lemon Cream #F5F0A4 — 포인트로만 사용
+   - 캔디 블러시: 주요 버튼, 아이콘 외곽선, 점수
+   - 레몬 크림: 아이콘 채움, 추천 코디 카드 바탕
    - 나머지는 흰색 · 회색 바탕
    글꼴: Pretendard / 글자 크기는 모두 정수 px */
 :root {
-  --pink: #FFC3E0;
-  --pink-ink: #C2457F;
-  --green: #0F5730;
-  --green-dark: #0A3F22;
+  --sub: #F5F0A4;
+  --main-ink: #B23C8A;
+  --main: #E771C0;
+  --main-dark: #C9549F;
   --bg: #FFFFFF;
   --surface: #F4F5F4;
   --surface-2: #F9FAF9;
@@ -45,7 +45,7 @@ button { cursor: pointer; }
 .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; padding: 8px 12px; border-radius: 99px; background: var(--surface); color: var(--muted); }
 .badge::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #C5CAC6; }
 .badge.on { color: var(--ink); }
-.badge.on::before { background: var(--green); }
+.badge.on::before { background: var(--main); }
 
 main { padding: 4px 20px 0; }
 .view { display: none; }
@@ -100,7 +100,7 @@ label input {
 }
 label input:focus { outline: 2px solid var(--ink); outline-offset: 0; }
 label.switch { display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: 15px; }
-label.switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--green); }
+label.switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--main); }
 .field { font-size: 14px; font-weight: 700; color: var(--muted); margin-bottom: 18px; }
 .field small { font-size: 12px; font-weight: 500; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
@@ -112,8 +112,8 @@ label.switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--g
   border: 0; border-radius: 99px; padding: 15px 22px; font-size: 15px; font-weight: 700;
   background: var(--surface); color: var(--ink);
 }
-.primary { background: var(--green); color: #fff; font-size: 16px; width: 100%; }
-.primary:active { background: var(--green-dark); }
+.primary { background: var(--main); color: #fff; font-size: 16px; width: 100%; }
+.primary:active { background: var(--main-dark); }
 .row .primary { width: auto; }
 .row-btn:disabled { opacity: .7; }
 .danger { background: #FDECEC; color: var(--danger); }
@@ -156,9 +156,9 @@ label.switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--g
 .tag { font-size: 12px; font-weight: 600; background: var(--surface); border-radius: 99px; padding: 5px 10px; display: inline-flex; align-items: center; gap: 4px; }
 h3 { font-size: 20px; font-weight: 800; letter-spacing: -0.4px; margin: 26px 0 12px; }
 h3.with-ico { display: flex; align-items: center; justify-content: flex-start; gap: 6px; }
-.best { background: var(--green); color: #fff; border: 0; }
-.best .reason { color: rgba(255,255,255,.85); }
-.best .reason b { color: var(--pink); }
+.best { background: var(--sub); color: var(--ink); border: 0; }
+.best .reason { color: var(--ink); }
+.best .reason b { color: var(--main-ink); }
 .outfit { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .outfit img { width: 76px; height: 76px; object-fit: cover; border-radius: 18px; background: #fff; }
 .outfit .plus { display: flex; }
@@ -172,7 +172,7 @@ h3.with-ico { display: flex; align-items: center; justify-content: flex-start; g
 .rec .info { flex: 1; min-width: 0; }
 .rec .info b { font-size: 15px; color: var(--ink); }
 .rec .info p { margin: 2px 0 0; font-size: 12px; color: var(--muted); }
-.score { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 800; color: var(--pink-ink); white-space: nowrap; }
+.score { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 800; color: var(--main-ink); white-space: nowrap; }
 .actions { display: flex; gap: 8px; margin-top: 26px; }
 .actions button { flex: 1; }
 

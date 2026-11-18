@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>camera</title>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#D5E6DA" d="M12 14 H17 L19.5 9 H28.5 L31 14 H36 Q42 14 42 20 V36 Q42 40 38 40 H10 Q6 40 6 36 V20 Q6 14 12 14 Z"/>
-  <circle stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" cx="24" cy="27" r="7.5"/>
-  <path fill="none" stroke="#FF8CC2" stroke-width="3.5" stroke-linecap="round" d="M20.5 25 Q21.5 22.5 24 22"/>
-  <circle fill="#0F5730" cx="35" cy="20" r="1.8"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M12 14 H17 L19.5 9 H28.5 L31 14 H36 Q42 14 42 20 V36 Q42 40 38 40 H10 Q6 40 6 36 V20 Q6 14 12 14 Z"/>
+  <circle stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" cx="24" cy="27" r="7.5"/>
+  <path fill="none" stroke="#B23C8A" stroke-width="3.5" stroke-linecap="round" d="M20.5 25 Q21.5 22.5 24 22"/>
+  <circle fill="#E771C0" cx="35" cy="20" r="1.8"/>
 </svg>

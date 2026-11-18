@@ -1,7 +1,7 @@
-// 아이콘 세트: 굵고 둥근 그린 외곽선 + 연한 그린 채움 + 핑크 하이라이트 한 획
-const G = '#0F5730';      // 외곽선 (Forest Green)
-const T = '#D5E6DA';      // 채움 (연한 그린)
-const P = '#FF8CC2';      // 하이라이트 (Pink Lace를 조금 진하게 — 연한 바탕 위에서도 보이도록)
+// 아이콘 세트: 굵고 둥근 블러시 외곽선 + 레몬 크림 채움 + 진한 블러시 하이라이트 한 획
+const G = '#E771C0';      // 외곽선 (Candy Blush)
+const T = '#F5F0A4';      // 채움 (Lemon Cream)
+const P = '#B23C8A';      // 하이라이트 (블러시를 진하게 — 레몬 채움 위에서도 보이도록)
 const W = '#FFFFFF';
 
 const S = `stroke="${G}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"`;
@@ -63,10 +63,10 @@ const ICONS = {
   // 닫기
   close: `
     <path ${S} fill="none" d="M14 14 L34 34 M34 14 L14 34"/>`,
-  // 코디 연결 (+): 그린 카드 위에서 쓰는 핑크 동그라미
+  // 코디 연결 (+): 레몬 카드 위에서 쓰는 블러시 동그라미
   join: `
-    <circle fill="#FFC3E0" cx="24" cy="24" r="16"/>
-    <path ${S} fill="none" d="M24 17 V31 M17 24 H31"/>`,
+    <circle fill="${G}" cx="24" cy="24" r="16"/>
+    <path stroke="${W}" stroke-width="3.5" stroke-linecap="round" fill="none" d="M24 17 V31 M17 24 H31"/>`,
   // 수정: 연필
   edit: `
     <path ${S} fill="${T}" d="M30 8 L40 18 L18 40 H8 V30 Z"/>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>pants</title>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#D5E6DA" d="M12 6 H36 L39 40 Q39 42 37 42 H29 Q27.5 42 27.3 40.5 L24 20 L20.7 40.5 Q20.5 42 19 42 H11 Q9 42 9 40 Z"/>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M12 13 H36"/>
-  <path fill="none" stroke="#FF8CC2" stroke-width="3.5" stroke-linecap="round" d="M15 20 L14 30"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M12 6 H36 L39 40 Q39 42 37 42 H29 Q27.5 42 27.3 40.5 L24 20 L20.7 40.5 Q20.5 42 19 42 H11 Q9 42 9 40 Z"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M12 13 H36"/>
+  <path fill="none" stroke="#B23C8A" stroke-width="3.5" stroke-linecap="round" d="M15 20 L14 30"/>
 </svg>

@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>baby</title>
-  <circle stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#D5E6DA" cx="24" cy="27" r="16"/>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M24 11 Q21 5 26 4.5 Q30 5 27.5 9"/>
-  <circle fill="#0F5730" cx="18" cy="26" r="2.2"/>
-  <circle fill="#0F5730" cx="30" cy="26" r="2.2"/>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M19 32 Q24 37 29 32"/>
-  <path fill="none" stroke="#FF8CC2" stroke-width="3.5" stroke-linecap="round" d="M12.5 23 Q13.5 18.5 17 16"/>
+  <circle stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" cx="24" cy="27" r="16"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M24 11 Q21 5 26 4.5 Q30 5 27.5 9"/>
+  <circle fill="#E771C0" cx="18" cy="26" r="2.2"/>
+  <circle fill="#E771C0" cx="30" cy="26" r="2.2"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M19 32 Q24 37 29 32"/>
+  <path fill="none" stroke="#B23C8A" stroke-width="3.5" stroke-linecap="round" d="M12.5 23 Q13.5 18.5 17 16"/>
 </svg>

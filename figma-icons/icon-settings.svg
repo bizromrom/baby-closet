@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>settings</title>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M8 14 H40 M8 24 H40 M8 34 H40"/>
-  <circle stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#D5E6DA" cx="30" cy="14" r="5"/>
-  <circle stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#FF8CC2" cx="16" cy="24" r="5"/>
-  <circle stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#D5E6DA" cx="27" cy="34" r="5"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M8 14 H40 M8 24 H40 M8 34 H40"/>
+  <circle stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" cx="30" cy="14" r="5"/>
+  <circle stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#B23C8A" cx="16" cy="24" r="5"/>
+  <circle stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" cx="27" cy="34" r="5"/>
 </svg>

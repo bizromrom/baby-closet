@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>trash</title>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#D5E6DA" d="M11 15 H37 L34.5 40 Q34.3 42 32.3 42 H15.7 Q13.7 42 13.5 40 Z"/>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M7 15 H41 M19 15 V9 Q19 7 21 7 H27 Q29 7 29 9 V15"/>
-  <path fill="none" stroke="#FF8CC2" stroke-width="3.5" stroke-linecap="round" d="M20 23 V34"/>
-  <path stroke="#0F5730" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M28 23 V34"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M11 15 H37 L34.5 40 Q34.3 42 32.3 42 H15.7 Q13.7 42 13.5 40 Z"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M7 15 H41 M19 15 V9 Q19 7 21 7 H27 Q29 7 29 9 V15"/>
+  <path fill="none" stroke="#B23C8A" stroke-width="3.5" stroke-linecap="round" d="M20 23 V34"/>
+  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M28 23 V34"/>
 </svg>
