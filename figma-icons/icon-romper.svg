@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>romper</title>
-  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M17 6 L9 11 L6 19 L12 21 L14 18 V31 L12 42 H21 L24 34 L27 42 H36 L34 31 V18 L36 21 L42 19 L39 11 L31 6 Q28 11 24 11 Q20 11 17 6 Z"/>
-  <circle fill="#E771C0" cx="24" cy="18" r="1.8"/>
-  <circle fill="#E771C0" cx="24" cy="25" r="1.8"/>
-  <path fill="none" stroke="#B23C8A" stroke-width="3.5" stroke-linecap="round" d="M18 21 V27"/>
+  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M17 6 L9 11 L6 19 L12 21 L14 18 V31 L12 42 H21 L24 34 L27 42 H36 L34 31 V18 L36 21 L42 19 L39 11 L31 6 Q28 11 24 11 Q20 11 17 6 Z"/>
+  <circle fill="#3E3A24" cx="24" cy="18" r="1.8"/>
+  <circle fill="#3E3A24" cx="24" cy="25" r="1.8"/>
+  <path fill="none" stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" d="M18 21 V27"/>
 </svg>

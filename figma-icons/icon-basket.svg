@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>basket</title>
-  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M15 20 Q15 8 24 8 Q33 8 33 20"/>
-  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M7 20 H41 L37 40 Q36.5 42 34.5 42 H13.5 Q11.5 42 11 40 Z"/>
-  <path stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M19 27 V35 M29 27 V35"/>
-  <path fill="none" stroke="#B23C8A" stroke-width="3.5" stroke-linecap="round" d="M24 27 V35"/>
+  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M15 20 Q15 8 24 8 Q33 8 33 20"/>
+  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M7 20 H41 L37 40 Q36.5 42 34.5 42 H13.5 Q11.5 42 11 40 Z"/>
+  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M19 27 V35 M29 27 V35"/>
+  <path fill="none" stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" d="M24 27 V35"/>
 </svg>

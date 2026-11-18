@@ -3,8 +3,8 @@
   "short_name": "아기 옷장",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#FFFFFF",
+  "background_color": "#FFFDEC",
+  "theme_color": "#FFFDEC",
   "lang": "ko",
   "icons": [
     { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }

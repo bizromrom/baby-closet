@@ -1,7 +1,7 @@
-// 아이콘 세트: 굵고 둥근 블러시 외곽선 + 레몬 크림 채움 + 진한 블러시 하이라이트 한 획
-const G = '#E771C0';      // 외곽선 (Candy Blush)
+// 아이콘 세트: 굵고 둥근 진한 외곽선 + 레몬 크림 채움(주색) + 캔디 블러시 하이라이트 한 획(포인트)
+const G = '#3E3A24';      // 외곽선 (따뜻한 진한 색 — 레몬 채움이 또렷하게 보이도록)
 const T = '#F5F0A4';      // 채움 (Lemon Cream)
-const P = '#B23C8A';      // 하이라이트 (블러시를 진하게 — 레몬 채움 위에서도 보이도록)
+const P = '#E771C0';      // 하이라이트 (Candy Blush 포인트)
 const W = '#FFFFFF';
 
 const S = `stroke="${G}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"`;
@@ -63,9 +63,9 @@ const ICONS = {
   // 닫기
   close: `
     <path ${S} fill="none" d="M14 14 L34 34 M34 14 L14 34"/>`,
-  // 코디 연결 (+): 레몬 카드 위에서 쓰는 블러시 동그라미
+  // 코디 연결 (+): 레몬 카드 위에서 쓰는 블러시 동그라미 (포인트)
   join: `
-    <circle fill="${G}" cx="24" cy="24" r="16"/>
+    <circle fill="${P}" cx="24" cy="24" r="16"/>
     <path stroke="${W}" stroke-width="3.5" stroke-linecap="round" fill="none" d="M24 17 V31 M17 24 H31"/>`,
   // 수정: 연필
   edit: `
