@@ -2,6 +2,6 @@
   <title>join</title>
   <g transform="translate(-56 -280)">
     <path d="M80 320C88.8366 320 96 312.837 96 304C96 295.163 88.8366 288 80 288C71.1634 288 64 295.163 64 304C64 312.837 71.1634 320 80 320Z" fill="#FFBE5C"/>
-    <path d="M80 297V311M73 304H87" stroke-width="3.5" stroke-linecap="round" stroke="#FFFEF5"/>
+    <path d="M80 297V311M73 304H87" stroke-width="3" stroke-linecap="round" stroke="#FFFEF5"/>
   </g>
 </svg>
