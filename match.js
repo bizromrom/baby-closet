@@ -1,6 +1,6 @@
 // 옷 정보 기준값과 "어울림" 계산 규칙 (종류 + 색상 기준)
 
-export const CATEGORIES = ['상의', '하의', '원피스·우주복', '아우터'];
+export const CATEGORIES = ['상의', '하의', '원피스·우주복', '아우터', '양말'];
 export const PATTERNS = ['무지', '무늬'];
 export const SEASONS = ['봄', '여름', '가을', '겨울'];
 
@@ -30,10 +30,11 @@ export const colorOf = (name) => COLORS.find((c) => c.name === name) || COLORS[0
 
 // 함께 입을 수 있는 종류 조합
 const PAIRS = {
-  '상의': ['하의', '아우터'],
-  '하의': ['상의', '아우터'],
-  '원피스·우주복': ['아우터', '하의'],
-  '아우터': ['상의', '하의', '원피스·우주복'],
+  '상의': ['하의', '아우터', '양말'],
+  '하의': ['상의', '아우터', '양말'],
+  '원피스·우주복': ['아우터', '하의', '양말'],
+  '아우터': ['상의', '하의', '원피스·우주복', '양말'],
+  '양말': ['상의', '하의', '원피스·우주복', '아우터'],
 };
 export const canPair = (a, b) => (PAIRS[a] || []).includes(b);
 
@@ -95,18 +96,20 @@ export function recommend(item, all) {
 
   // 베스트 코디: 필요한 종류를 하나씩 골라 조합
   const need = {
-    '상의': ['하의', '아우터'],
-    '하의': ['상의', '아우터'],
-    '원피스·우주복': ['아우터'],
-    '아우터': [],
-  }[item.category];
+    '상의': ['하의', '아우터', '양말'],
+    '하의': ['상의', '아우터', '양말'],
+    '원피스·우주복': ['아우터', '양말'],
+    '아우터': ['양말'],
+    '양말': ['아우터'],
+  }[item.category] || [];
   let outfit = [];
-  if (item.category === '아우터') {
-    // 아우터: 상의+하의 조합 또는 원피스 중 더 잘 어울리는 쪽
+  if (item.category === '아우터' || item.category === '양말') {
+    // 아우터·양말: 상의+하의 조합 또는 원피스 중 더 잘 어울리는 쪽을 먼저 고름
     const top = byCat['상의']?.[0], bottom = byCat['하의']?.[0], one = byCat['원피스·우주복']?.[0];
     const pairAvg = top && bottom ? (top.score + bottom.score + colorScore(top.item, bottom.item).score) / 3 : -1;
     outfit = one && one.score >= pairAvg ? [one] : [top, bottom].filter(Boolean);
-  } else {
+  }
+  {
     for (const cat of need) {
       const list = byCat[cat] || [];
       if (!list.length) continue;

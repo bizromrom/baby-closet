@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>closet</title>
-  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M17 8 L8 13 L5 22 L11 24 L13 21 V40 Q13 42 15 42 H33 Q35 42 35 40 V21 L37 24 L43 22 L40 13 L31 8 Q28 13 24 13 Q20 13 17 8 Z"/>
-  <path fill="none" stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" d="M19 27 V33"/>
+  <g transform="translate(-56 -40)">
+    <path d="M73 47L64 52L61 61L67 63L69 60V79C69 80.3333 69.6667 81 71 81H89C90.3333 81 91 80.3333 91 79V60L93 63L99 61L96 52L87 47C85 50.3333 82.6667 52 80 52C77.3333 52 75 50.3333 73 47Z" fill="#FFFDEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFB760"/>
+    <path d="M75 66V72" stroke-width="3" stroke-linecap="round" stroke="#E771C0"/>
+  </g>
 </svg>

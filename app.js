@@ -78,7 +78,7 @@ $('#grid').addEventListener('click', (e) => {
 });
 
 /* ---------------- 상세 + 추천 ---------------- */
-const CAT_ICON = { '상의': 'closet', '하의': 'pants', '원피스·우주복': 'romper', '아우터': 'jacket' };
+const CAT_ICON = { '상의': 'closet', '하의': 'pants', '원피스·우주복': 'romper', '아우터': 'jacket', '양말': 'socks' };
 function openDetail(id) {
   const it = items.find((i) => i.id === id); if (!it) return;
   const { byCat, outfit } = recommend(it, items);
@@ -210,6 +210,7 @@ const CATEGORY_PROMPTS = {
   '하의': ['a pair of pants', 'baby trousers', 'leggings', 'shorts', 'a skirt'],
   '원피스·우주복': ['a dress', 'a baby romper', 'a one-piece baby jumpsuit with legs', 'a sleepsuit'],
   '아우터': ['a jacket', 'a cardigan', 'a padded coat', 'a vest', 'a hooded zip-up jacket'],
+  '양말': ['a pair of socks', 'baby socks', 'knee-high socks', 'ankle socks'],
 };
 const PATTERN_PROMPTS = {
   '무지': ['a plain solid color garment'],

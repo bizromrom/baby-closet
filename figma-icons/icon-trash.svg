@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>trash</title>
-  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M11 15 H37 L34.5 40 Q34.3 42 32.3 42 H15.7 Q13.7 42 13.5 40 Z"/>
-  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M7 15 H41 M19 15 V9 Q19 7 21 7 H27 Q29 7 29 9 V15"/>
-  <path fill="none" stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" d="M20 23 V34"/>
-  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M28 23 V34"/>
+  <g transform="translate(-296 -280)">
+    <path d="M306 295H332L329.5 320C329.367 321.333 328.633 322 327.3 322H310.7C309.367 322 308.633 321.333 308.5 320L306 295Z" fill="#FFFDEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFB760"/>
+    <path d="M302 295H336M314 295V289C314 287.667 314.667 287 316 287H322C323.333 287 324 287.667 324 289V295" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFB760"/>
+    <path d="M315 303V314" stroke-width="3" stroke-linecap="round" stroke="#E771C0"/>
+    <path d="M323 303V314" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#E771C0"/>
+  </g>
 </svg>

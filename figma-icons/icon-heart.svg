@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>heart</title>
-  <path stroke="#3E3A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#F5F0A4" d="M24 40 Q8 30 7 19 Q7 11 15 10 Q21 10 24 16 Q27 10 33 10 Q41 11 41 19 Q40 30 24 40 Z"/>
-  <path fill="none" stroke="#E771C0" stroke-width="3.5" stroke-linecap="round" d="M13 18 Q13.5 15 16 14.5"/>
+  <g transform="translate(-416 -280)">
+    <path d="M442 320C431.333 313.333 425.667 306.333 425 299C425 293.667 427.667 290.667 433 290C437 290 440 292 442 296C444 292 447 290 451 290C456.333 290.667 459 293.667 459 299C458.333 306.333 452.667 313.333 442 320Z" fill="#FFFDEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFB760"/>
+    <path d="M431 298C431.333 296 432.333 294.833 434 294.5" stroke-width="3" stroke-linecap="round" stroke="#E771C0"/>
+  </g>
 </svg>

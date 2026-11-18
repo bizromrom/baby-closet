@@ -1,10 +1,12 @@
 # 아기 옷장 아이콘 세트 (피그마용 SVG)
 
-- `icon-set.svg` : 15개 아이콘을 한 장에 모은 시트. 피그마에 끌어다 놓으면 아이콘마다 이름 붙은 레이어로 들어가요.
-- `icon-*.svg` : 아이콘 하나씩 (48×48). 여러 개를 한 번에 선택해 피그마 캔버스에 끌어다 놓아도 돼요.
+- `icon-set.svg` : 16개 아이콘을 한 장에 모은 시트 (피그마에서 다듬은 원본). 이 파일이 기준이에요.
+- `icon-*.svg` : 아이콘 하나씩 (48×48). `icon-set.svg`에서 자동으로 나눠 만든 파일이에요.
 
-스타일: 외곽선 #3E3A24 (두께 3.5, 둥근 끝) · 채움 #F5F0A4 Lemon Cream(주색) · 하이라이트 #E771C0 Candy Blush(포인트) · 코디 연결 동그라미 #E771C0
-선은 외곽선(stroke) 그대로 들어가서 피그마에서 두께·색을 바로 바꿀 수 있어요.
+스타일: 외곽선 #FFB760 (두께 3, 둥근 끝) · 채움 #FFFDEC · 포인트 #E771C0 Candy Blush · 코디 연결 동그라미 #FFB760
 
-앱의 `icons.js`를 고친 뒤 다시 내보내려면 (앱 서버가 켜져 있을 때):
-`powershell -ExecutionPolicy Bypass -File figma-icons/export-icons.ps1 -OutDir figma-icons`
+## 피그마에서 아이콘을 고친 뒤 앱에 반영하기
+1. 피그마에서 시트(640×520) 전체를 SVG로 내보내 `icon-set.svg`를 덮어써요.
+   칸 배치(5열, 칸 120px, 순서: closet add settings baby basket / camera pants romper jacket close / join edit trash heart sparkle / socks)는 그대로 둬요.
+2. 아래 명령을 실행하면 앱의 `icons.js`와 `icon-*.svg`가 새 아이콘으로 바뀌어요.
+   `powershell -ExecutionPolicy Bypass -File figma-icons/import-icons.ps1`

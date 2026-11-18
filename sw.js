@@ -1,5 +1,5 @@
 // 앱 화면 파일을 저장해 두어 오프라인에서도 열리게 함 (AI 분석은 인터넷 필요)
-const CACHE = 'baby-closet-v8';
+const CACHE = 'baby-closet-v9';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'match.js', 'icons.js', 'icon.svg', 'manifest.webmanifest'];
 
 self.addEventListener('install', (e) => {
