@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>trash</title>
   <g transform="translate(-296 -280)">
-    <path d="M306 295H332L329.5 320C329.367 321.333 328.633 322 327.3 322H310.7C309.367 322 308.633 321.333 308.5 320L306 295Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
-    <path d="M302 295H336M314 295V289C314 287.667 314.667 287 316 287H322C323.333 287 324 287.667 324 289V295" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
-    <path d="M315 303V314" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
-    <path d="M323 303V314" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F78BC2"/>
+    <path d="M306 295H332L329.5 320C329.367 321.333 328.633 322 327.3 322H310.7C309.367 322 308.633 321.333 308.5 320L306 295Z" fill="#FFFDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
+    <path d="M302 295H336M314 295V289C314 287.667 314.667 287 316 287H322C323.333 287 324 287.667 324 289V295" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
+    <path d="M315 303V314" stroke-width="3" stroke-linecap="round" stroke="#E88AA0"/>
+    <path d="M323 303V314" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#E88AA0"/>
   </g>
 </svg>

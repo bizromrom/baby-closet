@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>edit</title>
   <g transform="translate(-176 -280)">
-    <path d="M216 286L226 296L204 318H194V308L216 286Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
-    <path d="M211 291L221 301" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
-    <path d="M199 309L203 313" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
+    <path d="M216 286L226 296L204 318H194V308L216 286Z" fill="#FFFDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
+    <path d="M211 291L221 301" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
+    <path d="M199 309L203 313" stroke-width="3" stroke-linecap="round" stroke="#E88AA0"/>
   </g>
 </svg>

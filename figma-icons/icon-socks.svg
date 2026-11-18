@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>socks</title>
   <g transform="translate(-56 -400)">
-    <path d="M72 406H86V425L95 432Q99 436 96 440Q93 443 89 441L75 433Q72 431 72 427Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
-    <path d="M72 412H86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
-    <path d="M76 417V423" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
+    <path d="M72 406H86V425L95 432Q99 436 96 440Q93 443 89 441L75 433Q72 431 72 427Z" fill="#FFFDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
+    <path d="M72 412H86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
+    <path d="M76 417V423" stroke-width="3" stroke-linecap="round" stroke="#E88AA0"/>
   </g>
 </svg>
