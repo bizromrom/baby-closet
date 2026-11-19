@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>jacket</title>
   <g transform="translate(-416 -160)">
-    <path d="M436 168L427 173L424 192L430 194L432 184V202C432 203.333 432.667 204 434 204H452C453.333 204 454 203.333 454 202V184L456 194L462 192L459 173L450 168L443 174L436 168Z" fill="#FFFDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
-    <path d="M443 174V204" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
-    <path d="M436 168L438 178L443 174L448 178L450 168" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
-    <path d="M437 188V194" stroke-width="3" stroke-linecap="round" stroke="#E88AA0"/>
+    <path d="M436 168L427 173L424 192L430 194L432 184V202C432 203.333 432.667 204 434 204H452C453.333 204 454 203.333 454 202V184L456 194L462 192L459 173L450 168L443 174L436 168Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M443 174V204" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M436 168L438 178L443 174L448 178L450 168" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M437 188V194" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
   </g>
 </svg>

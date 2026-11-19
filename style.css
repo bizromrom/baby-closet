@@ -1,20 +1,20 @@
-/* 메인 컬러: 버터크림 #FFF6CC (주색) + 로즈 핑크 #FFC5D0 (포인트)
-   - 버터크림: 바탕 톤, 주요 버튼, 선택 상태, 추천 코디 카드, 아이콘 채움
-   - 로즈 핑크: 점수 · 하트 · 코디 연결 · AI 켜짐 점 · 아이콘 하이라이트 같은 작은 포인트
+/* 메인 컬러: 파스텔 레몬 #FFF3A8 (주색) + 핑크 #F78BC2 (포인트)
+   - 레몬 크림: 바탕 톤, 주요 버튼, 선택 상태, 추천 코디 카드, 아이콘 채움
+   - 캔디 블러시: 점수 · 하트 · 코디 연결 · AI 켜짐 점 · 아이콘 하이라이트 같은 작은 포인트
    글꼴: Pretendard / 글자 크기는 모두 정수 px */
 :root {
-  --lemon: #FFF6CC;
-  --lemon-dark: #F0DE8E;
-  --lemon-soft: #FFFDF5;
-  --blush-ink: #C7506E;
-  --blush: #FFC5D0;
+  --lemon: #FFF3A8;
+  --lemon-dark: #F5DF6B;
+  --lemon-soft: #FFFEF5;
+  --blush-ink: #C94A8D;
+  --blush: #F78BC2;
   --bg: #FFFFFF;
-  --surface: #FFF9E3;
+  --surface: #FFF8DC;
   --surface-2: #FFFFFF;
   --card: #FFFFFF;
-  --ink: #33282A;
-  --muted: #8A7D80;
-  --line: #F3E9D6;
+  --ink: #2A2718;
+  --muted: #878070;
+  --line: #F2EDD3;
   --danger: #B3261E;
   --radius: 24px;
   --shadow: 0 4px 16px rgba(80,72,20,.06);
@@ -39,7 +39,7 @@ button { cursor: pointer; }
 .topbar {
   position: sticky; top: 0; z-index: 5;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 18px 20px 12px; background: rgba(255,253,245,.94); backdrop-filter: blur(8px);
+  padding: 18px 20px 12px; background: rgba(255,254,245,.94); backdrop-filter: blur(8px);
 }
 .topbar h1 { display: flex; align-items: center; gap: 8px; font-size: 26px; font-weight: 800; margin: 0; letter-spacing: -0.6px; }
 .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; padding: 8px 12px; border-radius: 99px; background: #fff; color: var(--muted); border: 1px solid var(--line); }

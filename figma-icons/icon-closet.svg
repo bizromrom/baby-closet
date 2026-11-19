@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>closet</title>
   <g transform="translate(-56 -40)">
-    <path d="M73 47L64 52L61 61L67 63L69 60V79C69 80.3333 69.6667 81 71 81H89C90.3333 81 91 80.3333 91 79V60L93 63L99 61L96 52L87 47C85 50.3333 82.6667 52 80 52C77.3333 52 75 50.3333 73 47Z" fill="#FFFDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
-    <path d="M75 66V72" stroke-width="3" stroke-linecap="round" stroke="#E88AA0"/>
+    <path d="M73 47L64 52L61 61L67 63L69 60V79C69 80.3333 69.6667 81 71 81H89C90.3333 81 91 80.3333 91 79V60L93 63L99 61L96 52L87 47C85 50.3333 82.6667 52 80 52C77.3333 52 75 50.3333 73 47Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M75 66V72" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
   </g>
 </svg>

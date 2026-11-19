@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <title>pants</title>
   <g transform="translate(-176 -160)">
-    <path d="M187 168H211L214 202C214 203.333 213.333 204 212 204H204C203 204 202.433 203.5 202.3 202.5L199 182L195.7 202.5C195.567 203.5 195 204 194 204H186C184.667 204 184 203.333 184 202L187 168Z" fill="#FFFDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
-    <path d="M187 175H211" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F2A0B4"/>
-    <path d="M190 182L189 192" stroke-width="3" stroke-linecap="round" stroke="#E88AA0"/>
+    <path d="M187 168H211L214 202C214 203.333 213.333 204 212 204H204C203 204 202.433 203.5 202.3 202.5L199 182L195.7 202.5C195.567 203.5 195 204 194 204H186C184.667 204 184 203.333 184 202L187 168Z" fill="#FFFEF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M187 175H211" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#FFBE5C"/>
+    <path d="M190 182L189 192" stroke-width="3" stroke-linecap="round" stroke="#F78BC2"/>
   </g>
 </svg>
